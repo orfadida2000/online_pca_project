@@ -19,7 +19,7 @@ validation, and visualization tools for analyzing learned components and their g
 ## 📁 Project Structure
 
 ```
-online_pca_project/
+online_pca_project/                    # Project root
 │
 ├── online_pca/
 │   ├── __init__.py

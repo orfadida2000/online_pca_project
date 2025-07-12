@@ -19,7 +19,7 @@ validation, and visualization tools for analyzing learned components and their g
 ## 📁 Project Structure
 
 ```
-pca_project/
+online_pca_project/
 │
 ├── online_pca/
 │   ├── __init__.py
@@ -62,10 +62,10 @@ pip install -r requirements.txt
 ### ▶ How to Run
 
 **Always run `assignment_code.py` as the main script**  
-Make sure the **current working directory is the root folder (`PCA Project`)**.
+Make sure the **current working directory is the root folder (`online_pca_project/`)**.
 
 ```bash
-python PCA\ Assignment/assignment_code.py
+python pca_assignment/assignment_code.py
 ```
 
 ### ⚙ Modes
@@ -77,7 +77,7 @@ Enable modes by passing CLI arguments:
 
 Example:
 ```bash
-python PCA\ Assignment/assignment_code.py --debug --batch
+python pca_assignment/assignment_code.py --debug --batch
 ```
 
 ---
@@ -108,7 +108,7 @@ Receives: `delta`, `epsilon`, and optionally `min_iterations`.
 - `plot_angle_trajectories(...)`  
 - `plot_samples_components(...)` — **Only for 3D**
 
-To use in higher dimensions, skip/remove `plot_samples_components` from `assignment_plotting` (function inside assignment_code.py).
+To use in higher dimensions, skip/remove `plot_samples_components` from `assignment_plotting` (in `assignment_code.py`).
 
 ---
 

@@ -39,7 +39,6 @@ online_pca_project/
 │       └── update.py                  # Angle/gen. error update utilities
 │
 ├── pca_assignment/
-│   ├── .ipynb_checkpoints/
 │   ├── assignment_code.py             # Main script to run experiments
 │   └── interactive_plot.ipynb         # Jupyter for interactive visualizations
 │
@@ -51,22 +50,36 @@ online_pca_project/
 
 ---
 
-## 🚀 Running the Project
+## Setup
 
-### ✔ Requirements
-Install dependencies using:
+### 1. Create a virtual environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate    # or .venv\Scripts\activate on Windows
+```
+
+### 2. Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### ▶ How to Run
+---
 
-**Always run `assignment_code.py` as the main script**  
+## ▶ How to Run
+
 Make sure the **current working directory is the root folder (`online_pca_project/`)**.
 
+**Always run `assignment_code.py` as the main script** using module mode:
+
 ```bash
-python pca_assignment/assignment_code.py
+python -m pca_assignment.assignment_code
 ```
+
+This ensures all relative imports and packages are resolved correctly.
+
+---
 
 ### ⚙ Modes
 
@@ -77,7 +90,7 @@ Enable modes by passing CLI arguments:
 
 Example:
 ```bash
-python pca_assignment/assignment_code.py --debug --batch
+python -m pca_assignment.assignment_code --debug --batch
 ```
 
 ---

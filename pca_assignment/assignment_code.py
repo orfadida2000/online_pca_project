@@ -124,10 +124,12 @@ def parse_and_set_run_modes():
 def run_assignment():
 	parse_and_set_run_modes()  # Set debug mode based on command line argument
 
+	# Part 3
 	print("Running Sanger's rule with learning rate schema (1 component): Inverse decay without floor")
 	run_assignment_sanger(input_dim=3, learning_rate_schema=lr_inverse_decay_no_floor,
 						  stopping_rule=stopping_rule,
 						  components_num=1, min_iterations=0)
+	# Part 4 (bonus)
 	print("Running Sanger's rule with learning rate schema (2 components): Inverse decay without floor")
 	run_assignment_sanger(input_dim=3, learning_rate_schema=lr_inverse_decay_no_floor,
 						  stopping_rule=stopping_rule,

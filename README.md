@@ -150,6 +150,3 @@ Create your own PCA rule:
 
 MIT License. 
 See `LICENSE` for details.
-
-```
-

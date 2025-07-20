@@ -1,7 +1,8 @@
 # Online PCA Project
 
 This repository implements online Principal Component Analysis (PCA) algorithms, including Sanger's rule and
-simultaneous Oja's rule, for learning principal components from streaming data. It provides modular training,
+simultaneous Oja's rule, for learning principal components from streaming data.  
+It provides modular training,
 validation, and visualization tools for analyzing learned components and their generalization performance.
 
 ---
@@ -97,20 +98,20 @@ python -m pca_assignment.assignment_code --debug --batch
 
 ## 📌 Key Components
 
-### ✴ `run_online_pca(...)` (in `training.py`)
+### ✴ `run_online_pca(...)` (in [training.py](online_pca/learning/training.py))
 Generic online PCA loop. Takes:
 - `delta_fn`: Function for delta update (e.g., Oja/Sanger)
 - `recalibrate_fn`: Orthonormalization method
 - Plus data, learning rate, stopping rule, etc.
 
-### ✴ Learning Rates (in `learning_rate_schemas.py`)
+### ✴ Learning Rates (in [learning_rate_schemas.py](online_pca/learning/learning_rate_schemas.py))
 Functions receiving only `step` and returning the scalar learning rate.
 
-### ✴ Sample Generation (in `utilities.py`)
+### ✴ Sample Generation (in [utilities.py](online_pca/utilities.py))
 - `generate_samples(num_samples, rng=None)`  
 Returns matrix of shape `(d, num_samples)`, or 1D vector if `num_samples == 1`.
 
-### ✴ Stopping Rule (in `utilities.py`)
+### ✴ Stopping Rule (in [utilities.py](online_pca/utilities.py))
 Receives: `delta`, `epsilon`, and optionally `min_iterations`.
 
 ---
@@ -121,7 +122,7 @@ Receives: `delta`, `epsilon`, and optionally `min_iterations`.
 - `plot_angle_trajectories(...)`  
 - `plot_samples_components(...)` — **Only for 3D**
 
-To use in higher dimensions, skip/remove `plot_samples_components` from `assignment_plotting` (in `assignment_code.py`).
+To use in higher dimensions, skip/remove `plot_samples_components` from `assignment_plotting` (in [assignment_code.py](pca_assignment/assignment_code.py)).
 
 ---
 
@@ -149,4 +150,4 @@ Create your own PCA rule:
 ## 📄 License
 
 MIT License. 
-See `LICENSE` for details.
+See [LICENSE](LICENSE) for details.

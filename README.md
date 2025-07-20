@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ## ▶ How to Run
 
-Make sure the **current working directory is the root folder (`online_pca_project/`)**.
+Make sure the **current working directory is the root folder ([online_pca_project/](.))**.
 
 **Always run `assignment_code.py` as the main script** using module mode:
 

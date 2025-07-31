@@ -55,9 +55,18 @@ online_pca_project/                    # Project root
 
 ### 1. Create a virtual environment
 
+#### Linux / macOS:
+
 ```bash
 python3 -m venv .venv
-source .venv/bin/activate    # or .venv\Scripts\activate on Windows
+source .venv/bin/activate
+```
+
+#### Windows:
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
 ```
 
 ### 2. Install dependencies
@@ -149,5 +158,11 @@ Create your own PCA rule:
 
 ## 📄 License
 
-MIT License. 
+MIT License.
 See **[LICENSE](LICENSE)** for details.
+
+## 👤 Author
+
+- **Name:** Or Fadida
+- **Email:** [orfadida@mail.tau.ac.il](mailto:orfadida@mail.tau.ac.il)
+- **GitHub:** [orfadida2000](https://github.com/orfadida2000)

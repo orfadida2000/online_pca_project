@@ -7,7 +7,7 @@ validation, and visualization tools for analyzing learned components and their g
 
 ---
 
-## Features
+## 📚 Features
 
 - Online learning of PCA components using Sanger's and Oja's rules
 - Modular training and validation pipeline
@@ -51,7 +51,7 @@ online_pca_project/                    # Project root
 
 ---
 
-## Setup
+## 🛠 Setup
 
 ### 1. Create a virtual environment
 
